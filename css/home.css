@@ -7,17 +7,113 @@
 html,
 body {
     font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: disc;
+}
+p{
+    margin: 0;
+    padding: 0;
+    color: #161c2db3;
+    font-size: 1.125rem;
+    line-height: 28px;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #232121;
+    margin: 0;
+    padding: 0;
+    
 }
 
 
+.title-Pacifico {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.title{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+/* ABOUT */
 
 
+
+/* AGENT */
+.agent{
+    background:#ff6600 ;
+}
+.agent-image{
+    background-image: url(../img/banner3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    z-index: 1;
+}
+.agent-image::before{
+    content: "";
+    background: rgb(16 15 19 / 46%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.title-agent{
+    color: #fff;
+}
+.agent-info p{
+    color: #ffdfc9;
+}
+.agent-item{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.agent-details i{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #fff;
+    color: #ff6600;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.agent-details a{
+    display: block;
+    color: #232121;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+.agent-details p{
+    color: #ffdfc9;
+}
+.agent-details:hover i{
+    color: #ffc600 ;
+}
+.agent-details:hover a{
+    text-decoration: none;
+}
