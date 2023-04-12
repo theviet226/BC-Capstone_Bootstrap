@@ -51,11 +51,20 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 600;
 }
 /* HEADER */
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 100;
+    width: 100%;
+
+}
 .form-inline .form-control{
     padding: 10px 50px 10px 20px;
 }
 .navbar{
     padding: 40px 0 20px 0;
+    align-items: center;
 }
 .navbar-brand{
     font-size: 36px;
@@ -75,11 +84,34 @@ h1,h2,h3,h4,h5,h6{
     height: 45px;
     font-size: 16px;
 }
-
-
-
-
-
+.navbar__right{
+    display: flex;
+}
+.navbar h1{
+    font-weight: 700;
+    font-size: 35px;
+}
+.navbar h1 a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-toggler i{
+    font-size: 30px;
+    color: white;
+}
+.collapse .navbar-nav li a{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+#portNavbar .nav-link{
+    color: white;
+    transition: all .5s;
+}
+#portNavbar .nav-item:hover .nav-link{
+    color: #ff6600;
+}
 
 
 
@@ -93,7 +125,15 @@ h1,h2,h3,h4,h5,h6{
     min-height: 700px;
     height: 700px;
 }
-
+.carousel .banner__text{
+    position: relative;
+    top: 200px;
+}
+.carousel .banner__text h3{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
 /* ABOUT */
 
 
