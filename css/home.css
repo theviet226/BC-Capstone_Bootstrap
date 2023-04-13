@@ -50,16 +50,126 @@ h1,h2,h3,h4,h5,h6{
     line-height: 48px;
     font-weight: 600;
 }
+/* HEADER */
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 100;
+    width: 100%;
+
+}
+.form-inline .form-control{
+    padding: 10px 50px 10px 20px;
+}
+.navbar{
+    padding: 40px 0 20px 0;
+    align-items: center;
+}
+.navbar-brand{
+    font-size: 36px;
+    font-weight: 700;
+}
+.navbar .search__icon{
+    position: absolute;
+    font-size: 15px;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+.form-inline{
+    position: relative;
+}
+.navbar .form-control{
+    height: 45px;
+    font-size: 16px;
+}
+.navbar__right{
+    display: flex;
+}
+.navbar h1{
+    font-weight: 700;
+    font-size: 35px;
+}
+.navbar h1 a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-toggler i{
+    font-size: 30px;
+    color: white;
+}
+.collapse .navbar-nav li a{
+    color: white;
+    font-weight: 700;
+    font-size: 20px; 
+}
+#portNavbar a{
+    text-align: center;
+}
+#portNavbar .nav-link{
+    color: white;
+    transition: all .5s;
+}
+#portNavbar .nav-item:hover .nav-link{
+    color: #ff6600;
+}
+
+
 
 /* CAROUSEL */
 .carousel{
     background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
     background-size: cover;
-    background-repeat: no-repeat,
+    background-repeat: no-repeat;
     background-position: initial;
     background-attachment: fixed;
     min-height: 700px;
     height: 700px;
+}
+.carousel .banner__text{
+    position: relative;
+    top: 200px;
+    max-width: 600px;
+    text-align: left;
+    margin: 0;
+    left: 80px;
+}
+.carousel .banner__text h3{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+.item__banner{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    position: relative;
+    padding: 12px 45px;
+   margin: 40px 0 0 0;
+   display: inline-block;
+   border-radius: 5px;
+   transition: all 0.5s;
+}
+.item__banner a{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.carousel .banner__text .item__banner i{
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.item__banner:hover {
+    background-color: white;
+}
+.item__banner:hover a{
+    color: #ff6600;
+}
+.item__banner:hover i{
+    color: #ff6600;
 }
 /* ABOUT */
 
