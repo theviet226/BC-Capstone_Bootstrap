@@ -238,6 +238,55 @@ header{
 .agent-details:hover a{
     text-decoration: none;
 }
+/* CATEGORIES */
+.categories{
+    background: #f7f7f7;
+}
+.categories .tittle{
+    text-align: center;
+}
+
+.categories .card__img{
+    position: relative;
+}
+.categories .card__img:hover{
+    opacity: 0.85;
+    transition: all 0.5s;
+}
+.categories .card__img img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.categories .card__info a{
+    text-decoration: none;
+}
+.categories .card__info span{
+    color: #ffc600;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.categories .card__info a h4{
+    font-size: 22px;
+    line-height: 30px;
+    color: white;
+    font-weight: 700;
+}
+.categories .card__info{
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    width: 95%;
+    transform: translate3d(0, 10%, 0);
+    transition: all .3s;
+}
+
+
+
+
+
+
 
 
 @media (min-width:1200px) {
