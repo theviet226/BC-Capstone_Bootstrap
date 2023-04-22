@@ -16,8 +16,12 @@ li {
 
 a {
     text-decoration: none;
+    color: #ff6600;
+    transition: all .5s;
 }
-
+a:hover{
+    text-decoration: none;
+}
 ul {
     list-style: disc;
 }
@@ -324,6 +328,119 @@ header {
 .agent .row {
     margin-right: 0;
 }
+/* CATEGORIES */
+.categories{
+    background: #f7f7f7;
+}
+.categories .tittle{
+    text-align: center;
+}
+
+.categories .card__img{
+    position: relative;
+}
+.categories .card__img:hover{
+    opacity: 0.85;
+    transition: all 0.5s;
+}
+.categories .card__img img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.categories .card__info a{
+    text-decoration: none;
+}
+.categories .card__info span{
+    color: #ffc600;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.categories .card__info a h4{
+    font-size: 22px;
+    line-height: 30px;
+    color: white;
+    font-weight: 700;
+}
+.categories .card__info{
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    width: 95%;
+    transform: translate3d(0, 10%, 0);
+    transition: all .3s;
+}
+/* HOMEPAGE */
+.homepage{
+    background: url(../img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 50;
+}
+.middle::before{
+    content: "";
+    background-color: rgb(6 15 19 / 66%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+}
+.homepage .contact h3{
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+.homepage .contact .item__contact {
+    background:transparent;
+    color: white;   
+    text-decoration: none;
+    
+    
+}
+.homepage .contact .item__contact .btn-stye{
+    padding: 15px 45px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 2px solid white;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+.homepage .contact .item__contact{
+    padding-top: 50px;
+}
+.homepage .contact .item__contact i{
+    font-size: 15px;
+    padding-left: 5px;
+}
+.homepage .contact .item__contact .btn-white{
+    color: white;
+}
+.homepage .contact .item__contact .btn-primary{
+    background-color: #ff6600;
+    border: 2px solid #ff6600;
+    transition: all 0.3s;
+}
+.homepage .contact .item__contact .btn-primary:hover{
+    color: white;
+    background-color: #ff6600;
+    opacity: 0.8;
+}
+.homepage .contact .item__contact .btn-white:hover{
+    background-color: white;
+    color: #ff6600;
+}
+
+
+
 
 
 
@@ -377,12 +494,105 @@ header {
 
 }
 
+/* STATS */
+.stats{
+    margin-top:  -70px;
+    z-index: 100;
+    position: relative;
+}
+.stats-item{
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+}
 
+.stats-item i{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #ff6600;
+    border-radius: 50%;
+    text-align: center;
+}
+.timer{
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #232121;
+}
+p.count-text{
+    text-transform: capitalize;
+    color: 161c2db3;
+    font-weight: 500;
+}
 
+/* BLOG */
+.blog .card{
+    position: relative;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0;
+}
+.blog .card-header{
+    border: none;
+}
+.blog-thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 7px;
+}
 
-
-
-
+.blog-pos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.blog-pos:hover a{
+    text-decoration: none;
+}
+a.blog-des{
+    display: block;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #232121;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.blog .p-footer{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog .p-info{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.blog .p-info a{
+    font-weight: 700;
+    color: #232121;
+}
+.blog .read{
+    font-weight: 700;
+    color: #232121;
+    opacity: .9;
+    letter-spacing: 1px;
+}
+.blog .read:hover{
+    color: #ff6600;
+}
 @media (min-width:1200px) {
     .container {
         max-width: 1200px;
