@@ -517,9 +517,9 @@ div#small__dialog iframe {
     opacity: 0;
 }
 
-/* .mfp-hide {
+.mfp-hide {
     display: none;
-} */
+}
 
 #video iframe {
     width: 100%;
