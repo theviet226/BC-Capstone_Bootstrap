@@ -471,13 +471,13 @@ header {
     color: white;
 }
 
-#small__dialog {
+#small-dialog {
     max-width: 750px;
     margin: 40px auto;
     position: relative;
 }
 
-div#small__dialog iframe {
+div#small-dialog iframe {
     width: 100%;
     height: 420px;
     display: block;
@@ -485,20 +485,21 @@ div#small__dialog iframe {
 }
 
 .mfp-close-btn-in .mfp-close {
-    color: white;
-
+    color: #fff;
 }
-
 .mfp-close,
 .mfp-close:active {
     top: -40px;
 }
-
+.my-mfp-zoom-in .zoom-anim-dialog {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+}
 .my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
     opacity: 1;
     transform: scale(1);
 }
-
 .my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
     transform: scale(0.8);
     opacity: 0;
@@ -515,23 +516,6 @@ div#small__dialog iframe {
 
 .my-mfp-zoom-in.mfp-removing.mfp-bg {
     opacity: 0;
-}
-
-.mfp-hide {
-    display: none;
-}
-
-#video iframe {
-    width: 100%;
-    height: 420px;
-    display: block;
-    border-radius: 10px;
-}
-
-#video .play-view {
-    left: 0;
-    right: 0;
-    top: calc(50% - 40px);
 }
 
 
