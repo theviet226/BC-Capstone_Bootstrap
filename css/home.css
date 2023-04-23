@@ -62,7 +62,27 @@ h6 {
     line-height: 48px;
     font-weight: 600;
 }
+.btn-primary{
+    color: #fff;
+    background-color: #ff6600;
+    border: 2px solid #ff6600;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ff6600 ;
+    border: 2px solid #ff6600;
+    opacity: 0.8;
+}
+.btn-stye, .btn-white{
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+    border-radius: 7px;
+    border: 2px solid transparent;
 
+}
 /* HEADER */
 header {
     position: absolute;
@@ -593,6 +613,99 @@ a.blog-des{
 .blog .read:hover{
     color: #ff6600;
 }
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer{
+    background-color: #000;
+}
+.footer a.brand{
+    font-size: 30px;
+    font-weight: 600;
+    color:#fff;
+}
+
+.footer-social i{
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    color: #ff6600;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 7px;
+    background: #fff;
+
+}
+.footer p{
+    font-size: 17px;
+    line-height: 25px;
+    color:#a5a2a1 ;
+}
+.footer h6.footer-title{
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+    color: #fff;
+}
+.footer a{
+    font-size: 17px;
+    line-height:25px ;
+    color: #a5a2a1;
+}
+.footer input{
+    padding: 14px 20px;
+    font-size: 18px;
+    line-height: 28px;
+    border: 1px solid transparent;
+    outline: none;
+    width: 100%;
+    color: rgba(22,28,45,0.8);
+    background: #fff;
+    border-radius: 7px;
+}
+.copy-right{
+    background-color: #000;
+}
+p.copyright{
+    color: #fff;
+    font-size: 17px;
+    align-self: center;
+}
+
+.backtotop{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: white;
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: all .2s;
+    text-align: center;
+    background-color:  #ff6600;
+    background-size: 200%;
+    box-shadow: -4px 4px 24px -10px #f55f8d;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+}
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+
 @media (min-width:1200px) {
     .container {
         max-width: 1200px;
