@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="">
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/logo1.png" type="image/x-icon">
     <title>Dinner</title>
-
-
+    <!-- owlCarousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 
     <!-- FONT GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,70 +35,86 @@
     <link rel="stylesheet" href="./css/home.css">
 </head>
 
-<body>
+<body id="myBody">
+    
     <!-- HEADER -->
-    <header>
-        <nav class="navbar container-xl">
-            <h1>
-                <a href="#">Dinner</a>
-            </h1>
-            <div class="navbar__right">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search here.." aria-label="Search">
-                    <span class="fa fa-search search__icon"></span>
-                </form>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portNavbar"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+    <header id="site-header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>
+                        <a href="#">Dinner</a>
+                    </h1>
+                </div>
+                <div class="navbar__right">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search here.."
+                            aria-label="Search">
+                        <span class="fa fa-search search__icon"></span>
+                    </form>
+                    <div >
+                        <button class="btn icon__container" id="switchButton" title="Click to switch theme">
+                            <i class="far fa-moon"></i>
+                            <i class="far fa-sun"></i>
+                            
+                        </button>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portNavbar"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="overlay collapse navbar-collapse" id="portNavbar">
+                    <button id="navbar-close" class="overlay-close">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">404 page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Elements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Landing page</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="overlay collapse navbar-collapse" id="portNavbar">
-                <button id="navbar-close" class="overlay-close">
-                    <i class="fa fa-times"></i>
-                </button>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog Posts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">404 page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Elements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Landing page</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        </div>
     </header>
     <!-- CAROUSEL -->
     <section class="carousel">
-        <div class="banner__text container ">
-            <h3 class="text-left mb-4"> The Only Thing We Love More Than Food Is You!</h3>
-            <p class="mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum
-                sed consequuntur illum facere.</p>
-            <div class="item__banner mt-sm-5 mt-4 mr-2">
-                <a href="#">Read More</a>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </span>
+        <div class="banner__text">
+            <div class="container">
+                <div class="banner__info">
+                    <h3 class="mb-4"> The Only Thing We Love More Than Food Is You!</h3>
+                    <p class="mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea
+                        ipsum sed consequuntur illum facere.</p>
+                    <a class="btn btn-white mt-sm-5 mt-4 mr-2" href="#">Read More
+                        <span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </span>
+                    </a>
+
+                </div>
             </div>
         </div>
-
     </section>
     <!-- ABOUT -->
     <section class="about py-5">
@@ -170,7 +189,7 @@
                 <h3 class="title">Popular Categories</h3>
             </div>
             <div class="row">
-                <div class="categories__col col-4 mt-4">
+                <div class="categories__col col-lg-4 col-6 mt-4 pt-lg-2">
                     <div class="card__img">
                         <a href="#">
                             <img src="./img/g1.jpg" alt="">
@@ -186,7 +205,7 @@
 
                     </div>
                 </div>
-                <div class="categories__col col-4 mt-4">
+                <div class="categories__col col-lg-4 col-6 mt-4 pt-lg-2">
                     <div class="card__img">
                         <a href="#">
                             <img src="./img/g2.jpg" alt="">
@@ -201,7 +220,7 @@
                         </h6>
                     </div>
                 </div>
-                <div class="categories__col col-4 mt-4">
+                <div class="categories__col col-lg-4 col-6 mt-4 pt-lg-2">
                     <div class="card__img">
                         <a href="#">
                             <img src="./img/g3.jpg" alt="">
@@ -217,7 +236,7 @@
 
                     </div>
                 </div>
-                <div class="categories__col col-4 mt-4">
+                <div class="categories__col col-lg-4 col-6 mt-4 pt-lg-2">
                     <div class="card__img">
                         <a href="#">
                             <img src="./img/g4.jpg" alt="">
@@ -233,7 +252,7 @@
 
                     </div>
                 </div>
-                <div class="categories__col col-4 mt-4">
+                <div class="categories__col col-lg-4 col-6 mt-4 pt-lg-2">
                     <div class="card__img">
                         <a href="#">
                             <img src="./img/g5.jpg" alt="">
@@ -248,7 +267,7 @@
                         </h6>
                     </div>
                 </div>
-                <div class="categories__col col-4 mt-4">
+                <div class="categories__col col-lg-4 col-6 mt-4 pt-lg-2">
                     <div class="card__img">
                         <a href="#">
                             <img src="./img/g6.jpg" alt="">
@@ -392,11 +411,11 @@
         </div>
     </section>
     <!-- STATS -->
-    <section class="stats">
+    <section class="stats py-lg-0 py-md-5 py-4">
         <div class="container">
             <div class="stats-content">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-md-3 col-6 mt-md-0 mt-4">
                         <div class="stats-item">
                             <i class="fa-regular fa-building"></i>
                             <div class="timer count-title count-number mt-3" data-to="15000" data-speed="2000">15,100
@@ -404,7 +423,7 @@
                             <p class="count-text">Branches</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-md-3 col-6 mt-md-0 mt-4">
                         <div class="stats-item">
                             <i class="fa-solid fa-utensils"></i>
                             <div class="timer count-title count-number mt-3" data-to="19256" data-speed="2000">19,256
@@ -412,7 +431,7 @@
                             <p class="count-text">Food Items</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-md-3 col-6 mt-md-0 mt-4">
                         <div class="stats-item">
                             <i class="fa-solid fa-user"></i>
                             <div class="timer count-title count-number mt-3" data-to="2560" data-speed="2000">2,560
@@ -421,7 +440,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-md-3 col-6 mt-md-0 mt-4">
                         <div class="stats-item">
                             <i class="fa-regular fa-face-smile"></i>
                             <div class="timer count-title count-number mt-3" data-to="12100" data-speed="2000">12,100
@@ -433,9 +452,27 @@
             </div>
     </section>
     <!-- VIDEO -->
-    <section class="video"></section>
+    <section id="video">
+        <div class="py-5 video__blog">
+            <div class="container py-lg-5">
+                <div class="video__info position-relative">
+                    <a href="#small-dialog" class="text-center pl-3 open-popup-link popup-with-zoom-anim play-view">
+                        <span class="video-play-icon">
+                            <span class="fa fa-play"></span>
+                        </span>
+                        <!-- <i class="fa-solid fa-play"></i> -->
+                    </a>
+                </div>
+                <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                    <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" frameborder="0"
+                        allow="autoplay;fullscreen" allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- BLOG -->
-    <section class="blog py-5">
+    <section class="blog py-5" id="blog__color">
         <div class="container">
             <div class="title text-center">
                 <h6 class="title-Pacifico">
@@ -444,7 +481,7 @@
                 <h3 class="title">Blog Posts</h3>
             </div>
             <div class="row">
-                <div class="col-4 mt-5">
+                <div class="col-lg-4 col-md-6 mt-5">
                     <div class="card">
                         <div class="card-header p-0 position-relative ">
                             <a href=""></a>
@@ -473,7 +510,7 @@
 
                     </div>
                 </div>
-                <div class="col-4 mt-5">
+                <div class="col-lg-4 col-md-6 mt-5">
                     <div class="card">
                         <div class="card-header p-0 position-relative ">
                             <a href=""></a>
@@ -501,7 +538,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mt-5">
+                <div class="col-lg-4 col-md-6 mt-5">
                     <div class="card">
                         <div class="card-header p-0 position-relative ">
                             <a href=""></a>
@@ -533,13 +570,122 @@
         </div>
     </section>
     <!-- TESTIMONIALS -->
-    <section class="testimonials"></section>
+    <section id="testimonials">
+        <div class="testimonials__midd py-5">
+            <div class="container py-lg-5 py-md-3">
+                <div class="text-center">
+                    <h6 class="title-Pacifico">Testimonials</h6>
+                    <h3 class="mb-5 title">What People Say</h3>
+                </div>
+                <div id="owl-agency" class="owl-carousel owl-theme py-2 mb-4 text-center owl-loaded owl-drag">
+                    <div class="text__item">
+                        <div class="testimonials__inner text-center ">
+                            <div class="testimonials__content">
+                                <a href="#" class="comment__img">
+                                    <img src="./img/team1.jpg" class="img-reponsive" alt="placeholder image">
+                                </a>
+                                <span class="fa-solid fa-quote-left">
+                                </span>
+                                <div class="testimonials-caption ">
+                                    <p>OMG! I cannot believe. It's Awesome</p>
+                                </div>
+                                <p>My new site is so much faster and easier to work with than my old site. They are here
+                                    to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                <div class="testimonials-center mt-4">
+                                    <div class="center__info">
+                                        <h3>Johnson william</h3>
+                                        <p>Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__item">
+                        <div class="testimonials__inner text-center">
+                            <div class="testimonials__content">
+                                <a href="#" class="comment__img">
+                                    <img src="./img/team2.jpg" class="d-block w-100" alt="">
+                                </a>
+                                <span class="fa-solid fa-quote-left">
+                                </span>
+                                <div class="testimonials-caption ">
+                                    <p>Simply the best. Better than all the rest.</p>
+                                </div>
+                                <p>My new site is so much faster and easier to work with than my old site. They are here
+                                    to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                <div class="testimonials-center mt-4">
+                                    <div class="center__info">
+                                        <h3>Alexander sakura</h3>
+                                        <p>Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__item">
+                        <div class="testimonials__inner text-center">
+                            <div class="testimonials__content">
+                                <a href="#" class="comment__img">
+                                    <img src="./img/team3.jpg" class="d-block w-100" alt="">
+                                </a>
+                                <span class="fa-solid fa-quote-left">
+                                </span>
+                                <div class="testimonials-caption ">
+                                    <p>OMG! I cannot believe. It's Awesome</p>
+                                </div>
+                                <p>My new site is so much faster and easier to work with than my old site. They are here
+                                    to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                <div class="testimonials-center mt-4">
+                                    <div class="center__info">
+                                        <h3>John wilson</h3>
+                                        <p>Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__item">
+                        <div class="testimonials__inner text-center">
+                            <div class="testimonials__content">
+                                <a href="#" class="comment__img">
+                                    <img src="./img/team2.jpg" class="d-block w-100" alt="">
+                                </a>
+                                <span class="fa-solid fa-quote-left">
+                                </span>
+                                <div class="testimonials-caption ">
+                                    <p>OMG! I cannot believe. It's Awesome</p>
+                                </div>
+                                <p>My new site is so much faster and easier to work with than my old site. They are here
+                                    to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                <div class="testimonials-center mt-4">
+                                    <div class="center__info">
+                                        <h3>Julia sakura</h3>
+                                        <p>Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
     <!-- FOOTER -->
     <footer>
         <div class="footer py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-6 col-sm-7 pr-lg-5">
                         <div class="footer-logo mb-3">
                             <h2>
                                 <a href="#" class="brand">Diner</a>
@@ -563,7 +709,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-sm-0 mt-5">
                         <div class="footer-item">
                             <h6 class="footer-title">Categories</h6>
                             <ul>
@@ -576,7 +722,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-sm-0 mt-5">
                         <div class="footer-item">
                             <h6 class="footer-title">Archives</h6>
                             <ul>
@@ -586,7 +732,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-6 col-sm-7 mt-lg-0 mt-5">
                         <h6 class="footer-title"> Subscribe to our Newsletter</h6>
                         <p>Enter your email and receive the latest news, updates and special offers from us.
                         </p>
@@ -601,15 +747,15 @@
         <div class="copy-right">
             <div class="container">
                 <div class="row">
-                    <p class="col-8 copyright">© 2023 Diner.All Rights Reserved |WordPress Theme by
+                    <p class="col-lg-8 copyright">© 2023 Diner.All Rights Reserved |WordPress Theme by
                         <a href="#">BC5008</a>
                     </p>
-                    <div class="col-4"></div>
+                    <div class="col-lg-4"></div>
                 </div>
             </div>
         </div>
 
-       
+
     </footer>
     <a href="#" class=" backtotop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out">
         <i class="fa fa-arrow-up"></i>
@@ -629,20 +775,67 @@
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <!-- Jquery waypoints -->
     <script src=https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <!-- Magnific Popup core JS file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".popup-with-zoom-anim").magnificPopup({
+                type: "inline",
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: "auto",
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: "my-mfp-zoom-in"
+            });
+        });
+    </script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#owl-agency").owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 50,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    }
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                }
+            })
+        })
+    </script>
+
+
     <script src="./js/close.js"></script>
     <script src="./js/counter.js"></script>
     <script src="./js/backtotop.js"></script>
     <script src="./js/util.js"></script>
-    
-    
+    <script src="./js/darktheme.js"></script>
+
+
 
 
 
